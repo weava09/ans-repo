@@ -1,3 +1,5 @@
-- name: run powershell command
-  hosts: all
-  win_shell: New-Item -Path c:\temp\pw_test.test
+- hosts: all
+
+  tasks:
+ - name: create pw_test.test file under c:\temp
+   win_shell: New-Item -Path c:\temp\pw_test.test
