@@ -1,0 +1,5 @@
+- hosts: all
+  tasks:
+
+  - name: create pw_test.test file under c:\temp
+    win_shell: '.\git_ps.ps1'
