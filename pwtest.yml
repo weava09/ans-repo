@@ -1,5 +1,3 @@
-- hosts: all
-  Tasks:
-
 - name: run powershell command
+  hosts: all
   win_shell: New-Item -Path c:\temp\pw_test.test
